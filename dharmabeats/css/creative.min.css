@@ -32,27 +32,21 @@ h1,h2,h3,h4,h5,h6{
 	}
 section{padding:8rem 0;
 	}
-.section-heading{
-	margin-top:0;
-	}
-	::-moz-selection{
-		color:#fff;
-		background:#2d0c58;
-		/*#212529;*/
-		text-shadow:none;
-		}
-		::selection{
-			color:#fff;background:#212529;
-			text-shadow:none;
-		}
-	}
-}
+
 img::selection{
 	color:#fff;background:0 0;
 	}
 	img::-moz-selection{
 		color:#fff;background:0 0;
 	}
+}
+
+#demo,
+.carousel-slide
+.japanfunk{
+	display:block;
+	width:25%;
+	margin:0 auto;
 }
 #mainNav{
 	border-bottom:1px solid rgba(33,37,41,.1);
@@ -152,6 +146,32 @@ header.masthead h1{
 }
 header.masthead p{
 	font-weight:300;
+}
+/*geto gif to show up behind text*/
+section,
+  .bg-primary
+  .container{
+	background-image:url(../img/speak.gif/);
+	background-position:center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.section-heading{
+	margin-top:0;
+	}
+	::-moz-selection{
+		color:#fff;
+		background:#2d0c58;
+		/*#212529;*/
+		text-shadow:none;
+		}
+		::selection{
+			color:#fff;background:#212529;
+			text-shadow:none;
+		}
+	}
 }
 @media (min-width:768px){
 	header.masthead p{
